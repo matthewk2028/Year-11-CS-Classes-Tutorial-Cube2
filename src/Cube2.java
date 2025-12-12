@@ -42,7 +42,7 @@ public class Cube2 {
         int total = this.calculateSurfaceArea() + otherCube.calculateSurfaceArea();
         int side = (int) Math.sqrt(total / 6);
         if (pythag(this.getSide(), otherCube.getSide(), side)) {return new Cube2(side);}
-        throw new IllegalArgumentException("Three cube's side lengths must form a pyfag triple");
+        throw new IllegalArgumentException("Three cube's side lengths must form a pythag triple");
     }
 
     public static boolean pythag(int side1, int side2, int side3) {
